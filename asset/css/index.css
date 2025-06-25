@@ -1,0 +1,557 @@
+@font-face {
+font-family: 'Monserat';
+src: url('asset/fonts/Montserrat-ExtraBold') format('truetype');
+}
+
+body {
+font-family: 'Monserat', sans-serif;
+}
+
+.nav {
+transition: background-color 0.3s ease;
+padding: 16px;
+z-index: 0;
+/* Pastikan navbar berada di belakang elemen .ahov */
+}
+
+.nav.transparent {
+background-color: transparent;
+}
+
+.nav.solid {
+background-color: #ffffff;
+color: #ffffff;
+padding: 16px;
+/* Ganti dengan warna yang diinginkan */
+}
+
+.navbar {
+transition: all 0.5s ease-in-out;
+z-index: 1030;
+padding: 15px 0;
+background-color: transparent !important;
+box-shadow: none;
+}
+
+.navbar.scrolled {
+background-color: rgba(248, 249, 250, 0.95) !important;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+padding: 10px 0;
+}
+
+
+/* Mobile menu styling */
+.navbar-collapse {
+position: fixed;
+top: 70px;
+left: 50%;
+transform: translate(-50%, -150%);
+width: 90%;
+max-width: 400px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+padding: 20px;
+transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+opacity: 0;
+z-index: 1020;
+}
+
+.navbar-collapse.show {
+transform: translate(-50%, 0);
+opacity: 1;
+}
+
+.nav-link {
+transition: all 0.3s ease;
+padding: 8px 15px !important;
+border-radius: 5px;
+}
+
+.nav-link:hover {
+background-color: rgba(0, 0, 0, 0.05);
+}
+
+.ahov {
+background: transparent;
+/* Pastikan latar belakang tetap transparan */
+border: none;
+padding: 1em;
+color: #000000;
+text-transform: uppercase;
+position: relative;
+transition: .5s ease;
+z-index: 1;
+/* Tambahkan z-index untuk memastikan elemen ini di atas navbar */
+}
+
+.ahov::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 2px;
+width: 0;
+background-color: #000000;
+transition: .5s ease;
+}
+
+.ahov:hover {
+color: #ffffff;
+transition-delay: .5s;
+}
+
+.ahov:hover::before {
+width: 100%;
+}
+
+.ahov::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: 0;
+height: 0;
+width: 100%;
+background-color: #000000;
+transition: .4s ease;
+z-index: -1;
+/* Pastikan elemen ini berada di belakang */
+}
+
+.ahov:hover::after {
+height: 100%;
+transition-delay: 0.4s;
+color: aliceblue;
+}
+
+.overlay-a {
+text-decoration: none;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 0%);
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0px;
+padding: 0;
+height: 100%;
+width: 100%;
+border-radius: 15px;
+}
+
+.carousel-pagination {
+margin-top: 10px;
+text-align: center;
+}
+
+.carousel-pagination .swiper-pagination-bullet {
+width: 18px;
+height: 10px;
+background-color: #555;
+margin: 0 4px;
+border-radius: 0;
+opacity: 1;
+transition: 0.3s;
+}
+
+.carousel-pagination .swiper-pagination-bullet-active {
+background-color: #ffffff;
+width: 36px;
+}
+
+.intro {
+height: 100vh;
+position: relative;
+color: #ffffff;
+}
+
+.intro .swiper-pagination {
+bottom: 50px;
+}
+
+.intro .swiper-pagination .swiper-pagination-bullet {
+width: 18px;
+height: 10px;
+background-color: #ffffff;
+border-radius: 0;
+opacity: 1;
+transition: 0.3s;
+}
+
+.intro .swiper-pagination .swiper-pagination-bullet-active {
+background-color: #da8d00;
+width: 36px;
+}
+
+.intro .intro-item {
+padding-top: 2rem;
+}
+
+.intro .carousel-item-a {
+position: relative;
+height: 100vh;
+}
+
+.intro .carousel-item-a.bg-image {
+background-attachment: local;
+margin: 0 100px 100px 0;
+border-radius: 15px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+height: 100%;
+}
+
+.intro .intro-content {
+position: absolute;
+}
+
+.intro .intro-body {
+padding-left: 1rem;
+}
+
+@media (min-width: 768px) {
+.intro .intro-body {
+padding-left: 2rem;
+}
+}
+
+.intro-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+min-height: 100vh;
+padding: 2rem;
+box-sizing: border-box;
+}
+
+
+.intro .intro-desc {
+font-size: 0.9rem;
+color: #ffffff;
+letter-spacing: 0.05em;
+text-align: center;
+/* margin-top: -4%; */
+
+}
+
+.intro .intro-title {
+color: #ffffff;
+font-weight: 700;
+font-size: 2.2rem;
+/* text-transform: uppercase; */
+text-align: center;
+
+}
+
+@media (min-width: 576px) {
+.intro .intro-title {
+font-size: 2.7rem;
+text-align: center;
+}
+.abouts .intro-title {
+font-size: 2.7rem;
+}
+}
+
+@media (min-width: 768px) {
+.intro .intro-desc {
+font-size: 1rem;
+text-align: center;
+}
+.abouts .intro-title {
+font-size: 2rem;
+text-align: left;
+}
+}
+
+@media (min-width: 992px) {
+.intro .intro-title {
+font-size: 3rem;
+text-align: left;
+}
+.intro .intro-desc {
+font-size: 1rem;
+text-align: left; }
+}
+
+
+.about .about-content .about-title{
+font-weight: 700;
+font-size: 2rem;
+text-align: center;
+}
+
+
+.tentang {
+position: relative;
+color: #ffffff;
+}
+
+.tentang .tentang-item-a {
+position: relative;
+border-radius: 15px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+height: 80vh;
+/* ganti dari 100vh ke 80vh supaya lebih compact */
+margin-bottom: 30px;
+/* jarak antar section */
+}
+
+.tentang .tentang-content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+height: 100%;
+padding: 2rem;
+box-sizing: border-box;
+}
+
+.tentang .tentang-body {
+padding-left: 0;
+}
+
+@media (min-width: 768px) {
+.tentang .tentang-body {
+padding-left: 1rem;
+}
+.about .about-content .about-title {
+font-weight: 700;
+font-size: 2rem;
+text-align: left;
+}
+}
+
+.tentang .tentang-desc {
+font-size: 1rem;
+color: #ffffff;
+letter-spacing: 0.05em;
+text-align: center;
+}
+
+.tentang .tentang-title {
+color: #ffffff;
+font-weight: 700;
+font-size: 2.2rem;
+text-align: left;
+}
+
+@media (min-width: 576px) {
+.tentang .tentang-title {
+font-size: 2.9rem;
+text-align: center;
+}
+.tentang .tentang-desc {
+color: #ffffff;
+text-align: center; }
+.about .about-content .about-title {
+font-weight: 700;
+font-size: 3.3rem;
+
+text-align: center; }
+}
+
+@media (min-width: 992px) {
+.tentang .tentang-title {
+font-size: 3.5rem;
+text-align: left;
+}
+.tentang .tentang-desc {
+color: #ffffff;
+text-align: left;
+}
+.about .about-content .about-title {
+font-weight: 700;
+font-size: 2.9rem;
+text-align: left;
+}
+
+}
+
+
+
+.koleksi .koleksi-content .koleksi-title-head {
+font-weight: 700;
+font-size: 2rem;
+text-align: center;
+color: #000000;
+}
+.koleksi .koleksi-content .koleksi-title {
+font-weight: 700;
+font-size: 2rem;
+text-align: center;
+color: #ffffff;
+}
+
+/* Global */
+.koleksi {
+  position: relative;
+  color: #ffffff;
+}
+
+.koleksi .koleksi-item-a {
+  position: relative;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.koleksi .koleksi-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.koleksi .koleksi-body {
+  padding-left: 0;
+}
+.koleksi .koleksi-foot {
+  color: #000000;
+}
+
+/* =============== 992px ke atas (desktop) =============== */
+@media (min-width: 992px) {
+  .koleksi .koleksi-content .koleksi-title-head {
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+    .koleksi .koleksi-content .koleksi-title {
+      font-weight: 700;
+      font-size: 3.5rem;
+      text-align: center;
+      color: #ffffff;
+    }
+
+  /* Kiri */
+  .koleksi .koleksi-kiri {
+    height: 100vh;
+  }
+
+  .koleksi .koleksi-kiri .koleksi-item-a,
+  .koleksi .koleksi-kanan .koleksi-item-a {
+    height: 100%;
+  }
+
+  /* Kanan stack */
+  .koleksi .koleksi-kanan {
+    height: 48.4vh;
+  }
+
+  /* Jarak antar card kanan */
+  .koleksi .koleksi-kanan:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+/* =============== 768px sampai 991px (tablet) =============== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .koleksi .koleksi-content .koleksi-title-head {
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .koleksi .koleksi-content .koleksi-title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  /* Kiri */
+  .koleksi .koleksi-kiri {
+    height: 40vh;
+  }
+
+  .koleksi .koleksi-kiri .koleksi-item-a,
+  .koleksi .koleksi-kanan .koleksi-item-a {
+    height: 100%;
+  }
+
+  /* Kanan stack */
+  .koleksi .koleksi-kanan {
+    height: 38vh;
+  }
+
+  /* Jarak antar card kanan */
+  .koleksi .koleksi-kanan:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+/* =============== 576px sampai 767px (phablet) =============== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .koleksi .koleksi-content .koleksi-title-head {
+    font-weight: 700;
+    font-size: 2.9rem;
+    text-align: center;
+  }
+    .koleksi .koleksi-content .koleksi-title-head {
+      font-weight: 700;
+      font-size: 2.9rem;
+      text-align: center;
+      color: #ffffff;
+    }
+
+  /* Kiri */
+  .koleksi .koleksi-kiri {
+    height: 65vh;
+  }
+
+  .koleksi .koleksi-kiri .koleksi-item-a,
+  .koleksi .koleksi-kanan .koleksi-item-a {
+    height: 100%;
+  }
+
+  /* Kanan stack */
+  .koleksi .koleksi-kanan {
+    height: 32vh;
+  }
+
+  /* Jarak antar card kanan */
+  .koleksi .koleksi-kanan:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+/* =============== di bawah 576px (mobile) =============== */
+@media (max-width: 575.98px) {
+  .koleksi .koleksi-content .koleksi-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  /* Kiri */
+  .koleksi .koleksi-kiri {
+    height: 50vh;
+  }
+
+  .koleksi .koleksi-kiri .koleksi-item-a,
+  .koleksi .koleksi-kanan .koleksi-item-a {
+    height: 100%;
+  }
+
+  /* Kanan stack */
+  .koleksi .koleksi-kanan {
+    height: 25vh;
+  }
+
+  /* Jarak antar card kanan */
+  .koleksi .koleksi-kanan:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
