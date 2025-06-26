@@ -393,7 +393,10 @@ color: #ffffff;
   position: relative;
   color: #ffffff;
 }
-
+.koleksi.display-table,
+.koleksi .table-cell {
+  height: 100%;
+}
 .koleksi .koleksi-item-a {
   position: relative;
   border-radius: 15px;
@@ -401,26 +404,60 @@ color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  margin-bottom: 0;
+  height: 300px;
+  margin-bottom: 2rem;
   overflow: hidden;
 }
 
 .koleksi .koleksi-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-end;
   height: 100%;
-  padding: 2rem;
-  box-sizing: border-box;
 }
 
-.koleksi .koleksi-body {
-  padding-left: 0;
+.koleksi.display-table,
+.koleksi .table-cell,
+.koleksi .container,
+.koleksi .row,
+.koleksi .col-lg-12 {
+  height: 100%;
 }
-.koleksi .koleksi-foot {
+
+.koleksi-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blur-cover {
+  width: 100%;
+  padding: 15px;
+  height: 25vh;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+.arrow-fill{
+  background-color: #ffffff;
   color: #000000;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100%;
 }
+
+.koleksi-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.koleksi-desc {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+}
+
 
 /* =============== 992px ke atas (desktop) =============== */
 @media (min-width: 992px) {
@@ -431,8 +468,8 @@ color: #ffffff;
   }
     .koleksi .koleksi-content .koleksi-title {
       font-weight: 700;
-      font-size: 3.5rem;
-      text-align: center;
+      font-size: 2rem;
+      text-align: left;
       color: #ffffff;
     }
 
@@ -466,7 +503,7 @@ color: #ffffff;
   }
   .koleksi .koleksi-content .koleksi-title {
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 2rem;
     text-align: center;
     color: #ffffff;
   }
@@ -499,9 +536,9 @@ color: #ffffff;
     font-size: 2.9rem;
     text-align: center;
   }
-    .koleksi .koleksi-content .koleksi-title-head {
+    .koleksi .koleksi-content .koleksi-title {
       font-weight: 700;
-      font-size: 2.9rem;
+      font-size: 2rem;
       text-align: center;
       color: #ffffff;
     }
@@ -534,7 +571,11 @@ color: #ffffff;
     font-size: 2.4rem;
     text-align: center;
   }
-
+    .koleksi .koleksi-content .koleksi-title-head {
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: left;
+    }
   /* Kiri */
   .koleksi .koleksi-kiri {
     height: 50vh;
