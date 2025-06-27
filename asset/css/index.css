@@ -328,10 +328,10 @@ body {
 }
 
 .tentang .tentang-desc {
-  font-size: 1rem;
-  color: #ffffff;
-  letter-spacing: 0.05em;
-  text-align: center;
+font-size: 0.9rem;
+color: #ffffff;
+letter-spacing: 0.05em;
+text-align: center;
 }
 
 .tentang .tentang-title {
@@ -342,20 +342,18 @@ body {
 }
 
 @media (min-width: 576px) {
-  .tentang .tentang-title {
-    font-size: 2.9rem;
-    text-align: center;
-  }
-  .tentang .tentang-desc {
-    color: #ffffff;
-    text-align: center;
-  }
-  .about .about-content .about-title {
-    font-weight: 700;
-    font-size: 3.3rem;
+.tentang .tentang-title {
+font-size: 2.9rem;
+text-align: center;
+}
+.tentang .tentang-desc {
+color: #ffffff;
+text-align: center; }
+.about .about-content .about-title {
+font-weight: 700;
+font-size: 3.3rem;
+text-align: center; }
 
-    text-align: center;
-  }
 }
 
 @media (min-width: 992px) {
@@ -451,7 +449,7 @@ body {
 
 .koleksi-desc {
   margin: 0.5rem 0 0 0;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 /* =============== 992px ke atas (desktop) =============== */
@@ -471,12 +469,12 @@ body {
 
   .koleksi .koleksi-kiri {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
   }
 
   .koleksi .koleksi-kanan {
     width: 100%;
-    height: 48.4vh;
+    height: 43.7vh;
   }
 
   .koleksi .koleksi-kiri .koleksi-item-a,
@@ -485,7 +483,7 @@ body {
   }
 
   .blur-cover-kiri {
-    height: 50vh;
+    height: 25vh;
   }
 
   .blur-cover-kanan {
@@ -499,11 +497,14 @@ body {
   }
   .koleksi .koleksi-content .koleksi-title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: left;
     color: #ffffff;
   }
-
+    .koleksi .koleksi-content .koleksi-desc {
+      font-size: 0.9rem;
+      text-align: left;
+    }
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -563,7 +564,10 @@ body {
     text-align: center;
     color: #ffffff;
   }
-
+    .koleksi .koleksi-content .koleksi-desc {
+      font-size: 1rem;
+      text-align: center;
+    }
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -594,11 +598,11 @@ body {
   }
 
   .blur-cover-kiri {
-    height: 35vh;
+    height: 30vh;
   }
 
   .blur-cover-kanan {
-    height: 35vh;
+    height: 30vh;
   }
 
   .koleksi .koleksi-content .koleksi-title-head {
@@ -612,6 +616,10 @@ body {
     text-align: center;
     color: #ffffff;
   }
+    .koleksi .koleksi-content .koleksi-desc {
+      font-size: 0.9rem;
+      text-align: center;
+    }
 
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 10px;
@@ -642,28 +650,38 @@ body {
   }
 
   .blur-cover-kiri {
-    height: 25vh;
+    height: 24vh;
   }
 
   .blur-cover-kanan {
-    height: 25vh;
+    height: 24vh;
   }
 
   .koleksi .koleksi-content .koleksi-title-head {
     font-weight: 700;
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
   }
 
   .koleksi .koleksi-content .koleksi-title {
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 1.1rem;
     text-align: center;
   }
+
+    .koleksi .koleksi-content .koleksi-desc {
+      font-size: 0.8rem;
+      text-align: center;
+    }
 
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 10px;
   }
+
+
+    
+}
+
 }
 
 /*styling Testimony*/
@@ -712,3 +730,4 @@ body {
     text-align: center;
   }
 }
+
