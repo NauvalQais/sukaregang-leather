@@ -429,10 +429,11 @@ text-align: center; }
   height: 25vh;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
   border-radius: 15px;
   margin-top: auto;
   margin-bottom: 12px;
+  position: relative;
 }
 .arrow-fill {
   background-color: #ffffff;
@@ -440,6 +441,9 @@ text-align: center; }
   padding: 5px 10px;
   border-radius: 100%;
   cursor: pointer;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
 }
 
 .koleksi-title {
@@ -560,12 +564,12 @@ text-align: center; }
 
   .koleksi .koleksi-content .koleksi-title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
     color: #ffffff;
   }
     .koleksi .koleksi-content .koleksi-desc {
-      font-size: 1rem;
+      font-size: 0.9;
       text-align: center;
     }
   .koleksi .koleksi-kanan:not(:last-child) {
@@ -612,7 +616,7 @@ text-align: center; }
   }
   .koleksi .koleksi-content .koleksi-title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
     color: #ffffff;
   }
@@ -682,7 +686,6 @@ text-align: center; }
     
 }
 
-}
 
 /*styling Testimony*/
 .testimony-section {
