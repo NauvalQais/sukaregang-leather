@@ -1,7 +1,7 @@
 // Carousel
 
 new Swiper('.intro-carousel', {
-    speed: 600,
+    speed: 1200,
     loop: true,
     autoplay: {
       delay: 2000,
@@ -55,9 +55,8 @@ new Swiper('.intro-carousel', {
 
 
 
-  // navbar desktop
   window.onscroll = function () {
-    var navbar = document.querySelector(".nav");
+    var navbar = document.querySelector(".navbar-custom");
     if (
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
@@ -69,19 +68,13 @@ new Swiper('.intro-carousel', {
       navbar.classList.add("transparent");
     }
   };
-
-  // Set initial class
+  
   document.addEventListener("DOMContentLoaded", function () {
-    var navbar = document.querySelector(".nav");
+    var navbar = document.querySelector(".navbar-custom");
     navbar.classList.add("transparent");
   });
+  
 
-  // var styleElement = document.createElement("style");
-  // styleElement.innerHTML =
-  //   "@font-face {font-family: 'popin'; src: url('asset/text/popin.ttf')}";
-  // document.head.appendChild(styleElement);
-  // document.body.style.fontFamily = "popin";
-  // Typed JS
   new Typed("#typed", {
     strings: [
       "Project Manager",
@@ -113,3 +106,5 @@ new Swiper('.intro-carousel', {
       zoom: 0.5,
     });
   });
+
+
