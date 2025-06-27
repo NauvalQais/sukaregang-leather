@@ -338,7 +338,7 @@ text-align: center;
 color: #ffffff;
 font-weight: 700;
 font-size: 2.2rem;
-text-align: left;
+text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -388,15 +388,12 @@ text-align: center;
 color: #ffffff;
 }
 
-/* Global */
+/* GLOBAL */
 .koleksi {
   position: relative;
   color: #ffffff;
 }
-.koleksi.display-table,
-.koleksi .table-cell {
-  height: 100%;
-}
+
 .koleksi .koleksi-item-a {
   position: relative;
   border-radius: 15px;
@@ -404,23 +401,21 @@ color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 300px;
-  margin-bottom: 2rem;
   overflow: hidden;
 }
 
-.koleksi .koleksi-content {
+.koleksi-content {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
+  flex-wrap: wrap;
 }
 
 .koleksi.display-table,
 .koleksi .table-cell,
 .koleksi .container,
 .koleksi .row,
-.koleksi .col-lg-12 {
+.koleksi .col-lg-12,
+.koleksi .col-md-12,
+.koleksi .col-12 {
   height: 100%;
 }
 
@@ -430,10 +425,10 @@ color: #ffffff;
   height: 100%;
 }
 
-.blur-cover {
+.blur-cover-kiri,
+.blur-cover-kanan {
   width: 100%;
   padding: 15px;
-  height: 25vh;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
   background-color: rgba(255, 255, 255, .15);
   backdrop-filter: blur(5px);
@@ -441,41 +436,50 @@ color: #ffffff;
   margin-top: auto;
   margin-bottom: 12px;
 }
-.arrow-fill{
+
+.arrow-fill {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   background-color: #ffffff;
   color: #000000;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .koleksi-title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 0.5rem;
 }
 
 .koleksi-desc {
   margin: 0.5rem 0 0 0;
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 
-
-/* =============== 992px ke atas (desktop) =============== */
+/* DESKTOP 992px+ */
 @media (min-width: 992px) {
-  .koleksi .koleksi-content .koleksi-title-head {
-    font-weight: 700;
-    font-size: 3.5rem;
-    text-align: center;
-  }
-    .koleksi .koleksi-content .koleksi-title {
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: left;
-      color: #ffffff;
+  .koleksi-title {
+      margin: 0;
+      font-size: 1rem;
     }
+  
+    .koleksi-desc {
+      margin: 0.5rem 0 0 0;
+      font-size: 1rem; }
+  .koleksi-content {
+    flex-direction: row;
+  }
 
-  /* Kiri */
   .koleksi .koleksi-kiri {
+    width: 100%;
     height: 100vh;
+  }
+
+  .koleksi .koleksi-kanan {
+    width: 100%;
+    height: 48.4vh;
   }
 
   .koleksi .koleksi-kiri .koleksi-item-a,
@@ -483,24 +487,80 @@ color: #ffffff;
     height: 100%;
   }
 
-  /* Kanan stack */
-  .koleksi .koleksi-kanan {
-    height: 48.4vh;
+  .blur-cover-kiri {
+    height: 50vh;
   }
 
-  /* Jarak antar card kanan */
+  .blur-cover-kanan {
+    height: 25vh;
+  }
+
+  .koleksi .koleksi-content .koleksi-title-head {
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .koleksi .koleksi-content .koleksi-title {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+    color: #ffffff;
+  }
+
   .koleksi .koleksi-kanan:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
-/* =============== 768px sampai 991px (tablet) =============== */
+/* TABLET 768px - 991px */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .koleksi-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .koleksi .koleksi-kiri {
+    width: 100%;
+    height:49vh;
+  }
+
+  .koleksi .koleksi-kanan {
+    width: 100%;
+    height: 49vh;
+  }
+
+  .koleksi .koleksi-kiri .koleksi-item-a,
+  .koleksi .koleksi-kanan .koleksi-item-a {
+    height: 100%;
+  }
+
+  .blur-cover-kiri {
+    width: 100%;
+      height: 25vh;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: auto;
+      margin-bottom: 12px;
+  }
+
+  .blur-cover-kanan {
+    width: 100%;
+      height: 25vh;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: auto;
+      margin-bottom: 12px;
+  }
+
   .koleksi .koleksi-content .koleksi-title-head {
     font-weight: 700;
     font-size: 3.2rem;
     text-align: center;
   }
+
   .koleksi .koleksi-content .koleksi-title {
     font-weight: 700;
     font-size: 2rem;
@@ -508,90 +568,105 @@ color: #ffffff;
     color: #ffffff;
   }
 
-  /* Kiri */
-  .koleksi .koleksi-kiri {
-    height: 40vh;
-  }
-
-  .koleksi .koleksi-kiri .koleksi-item-a,
-  .koleksi .koleksi-kanan .koleksi-item-a {
-    height: 100%;
-  }
-
-  /* Kanan stack */
-  .koleksi .koleksi-kanan {
-    height: 38vh;
-  }
-
-  /* Jarak antar card kanan */
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 15px;
   }
 }
 
-/* =============== 576px sampai 767px (phablet) =============== */
+/* PHABLET 576px - 767px */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+
+  .koleksi-title {
+      margin: 0;
+      font-size: 0.5rem; }
+  .koleksi-content {
+    flex-direction: column;
+  }
+
+  .koleksi .koleksi-kiri {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .koleksi .koleksi-kanan {
+    width: 100%;
+    height: 65vh;
+  }
+
+  .koleksi .koleksi-item-a {
+    height: 100%;
+  }
+
+  .blur-cover-kiri {
+    height: 35vh;
+  }
+
+  .blur-cover-kanan {
+    height: 35vh;
+  }
+
   .koleksi .koleksi-content .koleksi-title-head {
     font-weight: 700;
     font-size: 2.9rem;
     text-align: center;
   }
-    .koleksi .koleksi-content .koleksi-title {
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: center;
-      color: #ffffff;
-    }
 
-  /* Kiri */
-  .koleksi .koleksi-kiri {
-    height: 65vh;
+  .koleksi .koleksi-content .koleksi-title {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
   }
 
-  .koleksi .koleksi-kiri .koleksi-item-a,
-  .koleksi .koleksi-kanan .koleksi-item-a {
-    height: 100%;
-  }
-
-  /* Kanan stack */
-  .koleksi .koleksi-kanan {
-    height: 32vh;
-  }
-
-  /* Jarak antar card kanan */
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
-/* =============== di bawah 576px (mobile) =============== */
+/* MOBILE di bawah 576px */
 @media (max-width: 575.98px) {
+  .koleksi-content {
+    flex-direction: column;
+  }
+
+  .koleksi .koleksi-kiri,
+  .koleksi .koleksi-kanan {
+    width: 100%;
+  }
+
+  .koleksi .koleksi-kiri {
+    height: 50vh;
+  }
+
+  .koleksi .koleksi-kanan {
+    height: 50vh;
+  }
+
+  .koleksi .koleksi-item-a {
+    height: 100%;
+  }
+
+  .blur-cover-kiri {
+    height: 25vh;
+  }
+
+  .blur-cover-kanan {
+    height: 25vh;
+  }
+
+  .koleksi .koleksi-content .koleksi-title-head {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+  }
+
   .koleksi .koleksi-content .koleksi-title {
     font-weight: 700;
     font-size: 2.4rem;
     text-align: center;
   }
-    .koleksi .koleksi-content .koleksi-title-head {
-      font-weight: 700;
-      font-size: 2rem;
-      text-align: left;
-    }
-  /* Kiri */
-  .koleksi .koleksi-kiri {
-    height: 50vh;
-  }
 
-  .koleksi .koleksi-kiri .koleksi-item-a,
-  .koleksi .koleksi-kanan .koleksi-item-a {
-    height: 100%;
-  }
-
-  /* Kanan stack */
-  .koleksi .koleksi-kanan {
-    height: 25vh;
-  }
-
-  /* Jarak antar card kanan */
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 10px;
   }
