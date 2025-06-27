@@ -665,3 +665,50 @@ body {
     margin-bottom: 10px;
   }
 }
+
+/*styling Testimony*/
+.testimony-section {
+  padding: 3rem;
+}
+
+.testimony-wrapper {
+  padding: 2rem;
+}
+.paragraf-testimony {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.slide-modal {
+  display: flex;
+  justify-content: center;
+}
+.paragraf-content-modal {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+@media (max-width: 576px) {
+  .testimony-section {
+    padding: 0; /* atau 0 kalau kamu mau hilangin total */
+  }
+  .testimoni-wrapper {
+    padding: 1rem;
+  }
+  .paragraf-testimony {
+    text-align: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /*slide modal*/
+  .slide-modal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .paragraf-content-modal {
+    padding: 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
