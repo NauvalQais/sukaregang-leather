@@ -7,23 +7,62 @@ body {
   font-family: "Monserat", sans-serif;
 }
 
-.nav {
+.navbar-custom {
   transition: background-color 0.3s ease;
-  padding: 16px;
-  z-index: 0;
-  /* Pastikan navbar berada di belakang elemen .ahov */
+  z-index: 10;
+  /* pastikan tetap di atas konten */
 }
 
-.nav.transparent {
+.navbar-custom.transparent {
   background-color: transparent;
 }
 
-.nav.solid {
+.navbar-custom.solid {
   background-color: #ffffff;
-  color: #ffffff;
-  padding: 16px;
-  /* Ganti dengan warna yang diinginkan */
+  color: #000000;
+  
 }
+
+.custom-link {
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.custom-link:focus,
+.custom-link:hover {
+  color: #292929;
+}
+
+.custom-link:focus:after,
+.custom-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.custom-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000000;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+
+/* mobile navbar */
 
 .navbar {
   transition: all 0.5s ease-in-out;
@@ -32,11 +71,13 @@ body {
   background-color: transparent !important;
   box-shadow: none;
 }
-
+.text-nav{
+  font-weight: bolder;
+  color: #000000;
+  text-transform: uppercase;
+}
 .navbar.scrolled {
-  background-color: rgba(248, 249, 250, 0.95) !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
+  background-color: #fff !important;
 }
 
 /* Mobile menu styling */
@@ -71,65 +112,167 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.ahov {
-  background: transparent;
-  /* Pastikan latar belakang tetap transparan */
+
+.btn-koleksi {
+  outline: none;
+  cursor: pointer;
   border: none;
-  padding: 1em;
-  color: #000000;
-  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin: 0;
+  font-size: inherit;
   position: relative;
-  transition: 0.5s ease;
-  z-index: 1;
-  /* Tambahkan z-index untuk memastikan elemen ini di atas navbar */
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  text-decoration: none;
+  overflow: hidden;
+  background: #da8d00;
+  color: #000000;
 }
 
-.ahov::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #000000;
-  transition: 0.5s ease;
+.btn-koleksi .txt-btn-koleksi {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
 }
 
-.ahov:hover {
+.btn-koleksi:hover .txt-btn-koleksi {
   color: #ffffff;
-  transition-delay: 0.5s;
 }
 
-.ahov:hover::before {
-  width: 100%;
-}
-
-.ahov::after {
-  content: "";
+.btn-koleksi::before,
+.btn-koleksi::after {
   position: absolute;
+  top: 0;
   left: 0;
-  bottom: 0;
-  height: 0;
   width: 100%;
-  background-color: #000000;
-  transition: 0.4s ease;
-  z-index: -1;
-  /* Pastikan elemen ini berada di belakang */
-}
-
-.ahov:hover::after {
   height: 100%;
-  transition-delay: 0.4s;
-  color: aliceblue;
+  z-index: 0;
 }
 
+.btn-koleksi::before {
+  content: "";
+  background: #ffffff;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-koleksi:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+
+.btn-daftar {
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  position: relative;
+  letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    padding: 0.90rem 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none ;
+  color: #ffffff;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #ffffff;
+  box-shadow: inset 0 0 0 0 #da8d00;
+}
+
+.btn-daftar:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #da8d00;
+}
+
+.btn-daftar:active {
+  transform: scale(0.9);
+}
+
+
+.btn-login {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 2em;
+  border: 3px solid #da8d00;
+  border-radius: 500px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #da8d00;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.btn-login:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  border-radius: 500px;
+  background-color: #da8d00;
+  z-index: -1;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+  color: white;
+}
+
+.btn-login:hover:before,
+.btn-login:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.btn-login:active {
+  transform: scale(0.9);
+}
+@media (max-width: 575.98px) {
+
+  .btn-koleksi {
+    padding: 0.5rem 1rem;
+    font-size: 10px;
+  }
+
+  .btn-daftar {
+    padding: 0.37rem 1rem;
+    font-size: 10px;
+  }
+
+  .btn-login {
+    padding: 0.37rem 1rem;
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .btn-login {
+    padding: 0.37rem 1rem;
+    font-size: 10px;
+  }
+}
 .overlay-a {
   text-decoration: none;
   background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.65) 0%
+    linear-gradient(to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.25) 30%,
+        rgba(0, 0, 0, 0.3) 100%)
   );
 }
 
@@ -251,9 +394,7 @@ body {
     font-size: 2.7rem;
     text-align: center;
   }
-  .abouts .intro-title {
-    font-size: 2.7rem;
-  }
+  
 }
 
 @media (min-width: 768px) {
@@ -261,10 +402,7 @@ body {
     font-size: 1rem;
     text-align: center;
   }
-  .abouts .intro-title {
-    font-size: 2rem;
-    text-align: left;
-  }
+
 }
 
 @media (min-width: 992px) {
@@ -275,20 +413,97 @@ body {
   .intro .intro-desc {
     font-size: 1rem;
     text-align: left;
+    white-space: normal;
+      word-break: normal;
   }
 }
+/* Kelebihan */
+.kelebihan .kelebihan-title h3{
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 700;
+}
+.container-kelebihan {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
+.card-custom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 320px; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 32px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.card-custom .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  color: #000000;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card-custom .content .heading {
+  font-weight: 700;
+  font-size: 32px;
+} 
+
+.card-custom .content .para {
+  line-height: 1.5;
+}
+
+.card-custom::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(-45deg, #f89b29 0%, #be7c00 100%);
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card-custom:hover::before {
+  width: 100%;
+}
+
+.card-custom:hover {
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+/* Tentang */
 .about .about-content .about-title {
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
 }
+.about .about-content .about-desc {
 
+  font-size: 1rem;
+  text-align: center;
+}
 .tentang {
   position: relative;
   color: #ffffff;
 }
-
+/* .container-about {
+  overflow-x: hidden;
+} */
 .tentang .tentang-item-a {
   position: relative;
   border-radius: 15px;
@@ -338,7 +553,7 @@ text-align: center;
   color: #ffffff;
   font-weight: 700;
   font-size: 2.2rem;
-  text-align: left;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -370,7 +585,165 @@ text-align: center; }
     font-size: 2.9rem;
     text-align: left;
   }
+    .about .about-content .about-desc {
+  
+      font-size: 1.1rem;
+      text-align: left; }
 }
+
+.tutorial .tutorial-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.tutorial .tutorial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.tutorial .tutorial-item:last-child {
+  padding-bottom: 0;
+}
+.tutorial .tutorial-title h2{
+  font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.tutorial .tutorial-item .content {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(145deg, color-mix(in srgb, #be7c00, transparent 75%));
+    border: 2px solid color-mix(in srgb, #da8d00, transparent 55%);
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutorial .tutorial-item .content:hover {
+  transform: translateX(10px);
+  box-shadow: -8px 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial .tutorial-item .content:hover .tutorial-icon {
+  background: linear-gradient(135deg, color-mix(in srgb, #da8d00, transparent 100%), #da8d00);
+    transform: rotate(10deg);
+}
+
+.tutorial .tutorial-item .content:hover .tutorial-number {
+  transform: translateX(-5px);
+  opacity: 1;
+}
+
+.tutorial .tutorial-item .tutorial-number {
+  position: absolute;
+  left: -35px;
+  top: 35%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  font-weight: 800;
+  color: #da8d00;
+  line-height: 1;
+  opacity: 0.2;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tutorial .tutorial-item .card-body {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.tutorial .tutorial-item .tutorial-icon {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  background-color: #da8d00;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+.tutorial .tutorial-item .tutorial-icon i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+
+.tutorial .tutorial-item .tutorial-content p {
+  color: black;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.tutorial .tutorial-item .tutorial-content h3 {
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+@media (max-width: 767.98px) {
+  .tutorial .tutorial-container {
+    padding: 1rem 0;
+  }
+
+  .tutorial .tutorial-item {
+    padding-bottom: 2rem;
+  }
+
+  .tutorial .tutorial-item .content {
+    border-width: 1px;
+  }
+
+  .tutorial .tutorial-item .content:hover {
+    transform: translateY(-5px);
+  }
+
+  .tutorial .tutorial-item .tutorial-number {
+    font-size: 3rem;
+    left: 50%;
+    top: -1.5rem;
+    transform: translateX(-50%);
+  }
+
+  .tutorial .tutorial-item .tutorial-number:hover {
+    transform: translateX(-50%);
+  }
+
+  .tutorial .tutorial-item .card-body {
+    padding: 2rem 1.5rem 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .tutorial .tutorial-item .tutorial-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+  }
+
+  .tutorial .tutorial-item .tutorial-icon i {
+    font-size: 1.75rem;
+  }
+
+    .tutorial .tutorial-title h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center; }
+
+  
+}
+
 
 .koleksi .koleksi-content .koleksi-title-head {
   font-weight: 700;
@@ -429,7 +802,7 @@ text-align: center; }
   height: 25vh;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(7px);
   border-radius: 15px;
   margin-top: auto;
   margin-bottom: 12px;
