@@ -74,19 +74,12 @@ new Swiper('.intro-carousel', {
     navbar.classList.add("transparent");
   });
   
+  const toggler = document.querySelector(".custom-toggler");
+  const navbarCollapse = document.getElementById("navbarNav");
 
-  new Typed("#typed", {
-    strings: [
-      "Project Manager",
-      "Backend developer",
-      "frontend developer",
-      "Ui/ux designer",
-      "Full Stack Developer",
-    ],
-    typeSpeed: 100,
-    delaySpeed: 100,
-    loop: true,
+  toggler.addEventListener("click", function () {
+    this.classList.toggle("collapsed");
   });
-
-
-
+  navbarCollapse.addEventListener("hidden.bs.collapse", function () {
+    toggler.classList.remove("collapsed");
+  });
