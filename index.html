@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beranda</title>
@@ -11,934 +12,824 @@
     <link rel="stylesheet" href="asset/aos/aos.css" />
     <link rel="stylesheet" href="asset/css/index.css" />
     <link href="asset/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Nav -->
 
     <nav class="navbar-custom d-none d-sm-none d-md-block d-lg-block fixed-top">
-      <div
-        class="container d-flex justify-content-between align-items-center py-2"
-      >
-        <!-- Logo kiri -->
-        <div class="navbar-brand">
-          <a
-            href="javascript:void(0)"
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-          >
-            <img src="asset/img/logo.png" alt="Logo" style="height: 40px" />
-          </a>
-        </div>
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <!-- Logo kiri -->
+            <div class="navbar-brand">
+                <a href="javascript:void(0)" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+                    <img src="asset/img/logo.png" alt="Logo" style="height: 40px" />
+                </a>
+            </div>
 
-        <!-- Menu tengah -->
-        <ul class="nav justify-content-center">
-          <li class="nav-item mx-2">
-            <a
-              class="fw-bold text-decoration-none custom-link"
-              href="javascript:void(0)"
-              onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-              >Beranda</a
-            >
-          </li>
-          <li class="nav-item mx-2">
-            <a class="fw-bold text-decoration-none custom-link" href="#tentang"
-              >Tentang</a
-            >
-          </li>
-          <li class="nav-item mx-2">
-            <a class="fw-bold text-decoration-none custom-link" href="#koleksi"
-              >Koleksi</a
-            >
-          </li>
-          <li class="nav-item mx-2">
-            <a
-              class="fw-bold text-decoration-none custom-link"
-              href="#testimoni"
-              >Testimoni</a
-            >
-          </li>
-          <li class="nav-item mx-2">
-            <a class="fw-bold text-decoration-none custom-link" href="#"
-              >Kontak</a
-            >
-          </li>
-        </ul>
-        <div>
-          <a href="#" class="btn-login">Login</a>
+            <!-- Menu tengah -->
+            <ul class="nav justify-content-center">
+                <li class="nav-item mx-2">
+                    <a class="fw-bold text-decoration-none custom-link" href="javascript:void(0)"
+                        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Beranda</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="fw-bold text-decoration-none custom-link" href="#tentang">Tentang</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="fw-bold text-decoration-none custom-link" href="#koleksi">Koleksi</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="fw-bold text-decoration-none custom-link" href="#testimoni">Testimoni</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="fw-bold text-decoration-none custom-link" href="#">Kontak</a>
+                </li>
+            </ul>
+            <div>
+                <a href="#" class="btn-login">Login</a>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- navbar mobile -->
-    <nav
-      class="navbar navbar-expand-lg d-block d-sm-block d-md-none d-lg-none fixed-top"
-    >
-      <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          href="javascript:void(0)"
-          onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-          ><img src="asset/img/logo.png" alt="" srcset="" /><span
-            class="text-nav"
-            >slc</span
-          ></a
-        >
-        <div class="d-flex align-items-center">
-          <a
-            href="javascript:void(0)"
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-            class="btn-login me-2"
-            >Login</a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg d-block d-sm-block d-md-none d-lg-none fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"><img src="asset/img/logo.png" alt=""
+                    srcset="" /><span class="text-nav">slc</span></a>
+            <div class="d-flex align-items-center">
+                <a href="javascript:void(0)" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+                    class="btn-login me-2">Login</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="fw-bold nav-link text-decoration-none" href="javascript:void(0)"
+                            onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold nav-link text-decoration-none" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold nav-link text-decoration-none" href="#koleksi">Koleksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold nav-link text-decoration-none" href="testimoni">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold nav-link text-decoration-none" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="fw-bold nav-link text-decoration-none"
-                href="javascript:void(0)"
-                onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-                >Beranda</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="fw-bold nav-link text-decoration-none" href="#tentang"
-                >Tentang</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="fw-bold nav-link text-decoration-none" href="#koleksi"
-                >Koleksi</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="fw-bold nav-link text-decoration-none" href="testimoni"
-                >Testimoni</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="fw-bold nav-link text-decoration-none" href="#kontak"
-                >Kontak</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
     </nav>
 
     <!-- Nav -->
 
     <!-- Hero -->
     <section class="container-fluid mt-3">
-      <div class="row justify-content-center">
-        <div class="col-11 mt-5">
-          <div class="intro intro-carousel swiper position-relative">
-            <div class="swiper-wrapper">
-              <div
-                class="swiper-slide carousel-item-a intro-item bg-image"
-                style="background-image: url(asset/img/slide1.png)"
-              >
-                <div class="overlay overlay-a"></div>
-                <div class="intro-content display-table">
-                  <div class="table-cell">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="intro-body">
-                            <h1 class="intro-title mb-4">
-                              Kulit Asli Sukaregang, Kualitas Ekspor Harga
-                              <span class="color-b">Lokal</span>
-                            </h1>
-                            <p class="intro-desc">
-                              Produk kulit asli Garut langsung dari pengrajin
-                              tangan pertama, tanpa perantara.
-                            </p>
-                            <div
-                              class="d-flex justify-content-center gap-1 flex-wrap justify-content-lg-start"
-                            >
-                              <div class="col-auto">
-                                <a class="btn-koleksi">
-                                  <span class="txt-btn-koleksi"
-                                    >Beli Sekarang
-                                  </span></a
-                                >
-                              </div>
-                              <div class="col-auto">
-                                <a class="btn-daftar"
-                                  ><span class="txt-btn-daftar">
-                                    Lihat Koleksi
-                                  </span></a
-                                >
-                              </div>
+        <div class="row justify-content-center">
+            <div class="col-11 mt-5">
+                <div class="intro intro-carousel swiper position-relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide carousel-item-a intro-item bg-image"
+                            style="background-image: url(asset/img/slide1.png)">
+                            <div class="overlay overlay-a"></div>
+                            <div class="intro-content display-table">
+                                <div class="table-cell">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="intro-body">
+                                                    <h1 class="intro-title mb-4">
+                                                        Kulit Asli Sukaregang, Kualitas Ekspor Harga
+                                                        <span class="color-b">Lokal</span>
+                                                    </h1>
+                                                    <p class="intro-desc">
+                                                        Produk kulit asli Garut langsung dari pengrajin
+                                                        tangan pertama, tanpa perantara.
+                                                    </p>
+                                                    <div
+                                                        class="d-flex justify-content-center gap-1 flex-wrap justify-content-lg-start">
+                                                        <div class="col-auto">
+                                                            <a class="btn-koleksi">
+                                                                <span class="txt-btn-koleksi">Beli Sekarang
+                                                                </span></a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a class="btn-daftar"><span class="txt-btn-daftar">
+                                                                    Lihat Koleksi
+                                                                </span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="swiper-slide carousel-item-a intro-item bg-image"
-                style="background-image: url(asset/img/slide3.png)"
-              >
-                <div class="overlay overlay-a"></div>
-                <div class="intro-content display-table">
-                  <div class="table-cell">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="intro-body">
-                            <h1 class="intro-title mb-4">
-                              Kulit Asli. Buatan Lokal. Kualitas
-                              <span class="color-b">Global.</span>
-                            </h1>
-                            <p class="intro-desc">
-                              Produk kulit asli Garut langsung dari pengrajin
-                              tanpa perantara.
-                            </p>
+                        <div class="swiper-slide carousel-item-a intro-item bg-image"
+                            style="background-image: url(asset/img/slide3.png)">
+                            <div class="overlay overlay-a"></div>
+                            <div class="intro-content display-table">
+                                <div class="table-cell">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="intro-body">
+                                                    <h1 class="intro-title mb-4">
+                                                        Kulit Asli. Buatan Lokal. Kualitas
+                                                        <span class="color-b">Global.</span>
+                                                    </h1>
+                                                    <p class="intro-desc">
+                                                        Produk kulit asli Garut langsung dari pengrajin
+                                                        tanpa perantara.
+                                                    </p>
 
-                            <div
-                              class="d-flex justify-content-center gap-1 flex-wrap justify-content-lg-start"
-                            >
-                              <div class="col-auto">
-                                <a class="btn-koleksi">
-                                  <span class="txt-btn-koleksi"
-                                    >Beli Sekarang
-                                  </span></a
-                                >
-                              </div>
-                              <div class="col-auto">
-                                <a class="btn-daftar"
-                                  ><span class="txt-btn-daftar">
-                                    Lihat Koleksi
-                                  </span></a
-                                >
-                              </div>
+                                                    <div
+                                                        class="d-flex justify-content-center gap-1 flex-wrap justify-content-lg-start">
+                                                        <div class="col-auto">
+                                                            <a class="btn-koleksi">
+                                                                <span class="txt-btn-koleksi">Beli Sekarang
+                                                                </span></a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a class="btn-daftar"><span class="txt-btn-daftar">
+                                                                    Lihat Koleksi
+                                                                </span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div
-                class="swiper-slide carousel-item-a intro-item bg-image"
-                style="background-image: url(asset/img/slide2.png)"
-              >
-                <div class="overlay overlay-a"></div>
-                <div class="intro-content display-table">
-                  <div class="table-cell">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-8">
-                          <div class="intro-body">
-                            <h1 class="intro-title mb-4">
-                              Wujudkan Gaya Eleganmu dengan Tas Kulit
-                              <span class="color-b"> Garut</span>
-                            </h1>
-                            <p class="intro-desc">
-                              Produk kulit asli Garut langsung dari pengrajin
-                              tangan pertama, tanpa perantara.
-                            </p>
+                        <div class="swiper-slide carousel-item-a intro-item bg-image"
+                            style="background-image: url(asset/img/slide2.png)">
+                            <div class="overlay overlay-a"></div>
+                            <div class="intro-content display-table">
+                                <div class="table-cell">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="intro-body">
+                                                    <h1 class="intro-title mb-4">
+                                                        Wujudkan Gaya Eleganmu dengan Tas Kulit
+                                                        <span class="color-b"> Garut</span>
+                                                    </h1>
+                                                    <p class="intro-desc">
+                                                        Produk kulit asli Garut langsung dari pengrajin
+                                                        tangan pertama, tanpa perantara.
+                                                    </p>
 
-                            <div
-                              class="d-flex justify-content-center gap-1 flex-wrap justify-content-lg-start"
-                            >
-                              <div class="col-auto">
-                                <a class="btn-koleksi">
-                                  <span class="txt-btn-koleksi"
-                                    >Beli Sekarang
-                                  </span></a
-                                >
-                              </div>
-                              <div class="col-auto">
-                                <a class="btn-daftar"
-                                  ><span class="txt-btn-daftar">
-                                    Lihat Koleksi
-                                  </span></a
-                                >
-                              </div>
+                                                    <div
+                                                        class="d-flex justify-content-center gap-1 flex-wrap justify-content-lg-start">
+                                                        <div class="col-auto">
+                                                            <a class="btn-koleksi">
+                                                                <span class="txt-btn-koleksi">Beli Sekarang
+                                                                </span></a>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <a class="btn-daftar"><span class="txt-btn-daftar">
+                                                                    Lihat Koleksi
+                                                                </span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-              </div>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- Hero -->
 
     <section class="container-fluid mt-5 mb-3">
-      <div class="container-kelebihan">
-        <div class="kelebihan">
-          <div class="row justify-content-center">
-            <div class="col-12 kelebihan-title" data-aos="fade-up">
-              <h3>Kelebihan Kami</h3>
-            </div>
-            <div
-              class="col-12 col-sm-12 col-md-4 col-lg-4 mb-5"
-              data-aos="fade-right"
-              data-aos-delay="1000"
-            >
-              <div class="card-custom mx-auto">
-                <div class="content">
-                  <p class="heading">Lorem.</p>
-                  <p class="para">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Modi laboriosam at voluptas minus culpa deserunt delectus
-                    sapiente inventore pariatur
-                  </p>
+        <div class="container-kelebihan">
+            <div class="kelebihan">
+                <div class="row justify-content-center">
+                    <div class="col-12 kelebihan-title" data-aos="fade-up">
+                        <h3>Kelebihan Kami</h3>
+                        <p class="text-center fst-italic fw-bold">
+                            Tas Kulit Asli, Rasa Garut, Kualitas Dunia
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-5" data-aos="fade-right" data-aos-delay="1000">
+                        <div class="card-custom mx-auto">
+                            <div class="content">
+                                <p class="heading">Kulit Asli Garut Berkualitas</p>
+                                <p class="para">
+                                    Kami hanya menggunakan kulit asli pilihan dari Sukaregang,
+                                    Garut — daerah yang terkenal sebagai sentra kulit terbaik di
+                                    Indonesia. Setiap produk dibuat dari bahan kulit premium
+                                    yang kuat, tahan lama, dan memiliki tekstur khas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-12 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="card-custom mx-auto">
+                            <div class="content">
+                                <p class="heading">Desain Elegan &amp; Eksklusif</p>
+                                <p class="para">
+                                    Kami menghadirkan desain tas, dompet, dan sepatu kulit yang
+                                    elegan, modern, dan tetap mempertahankan sentuhan etnik khas
+                                    Garut. Produk kami cocok digunakan untuk aktivitas
+                                    sehari-hari, kerja, maupun hadiah spesial.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-12 col-lg-4" data-aos="fade-left" data-aos-delay="1000">
+                        <div class="card-custom mx-auto">
+                            <div class="content">
+                                <p class="heading">Harga Terjangkau &amp; Bisa Custom</p>
+                                <p class="para">
+                                    Kami menawarkan harga langsung dari pengrajin tanpa
+                                    perantara, sehingga lebih terjangkau. Selain itu, pelanggan
+                                    bisa request custom nama, warna, hingga model sesuai
+                                    keinginan, menjadikan produk lebih personal dan eksklusif.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div
-              class="col-sm-12 col-md-4 col-12 col-lg-4 mb-5"
-              data-aos="fade-up"
-              data-aos-delay="1000"
-            >
-              <div class="card-custom mx-auto">
-                <div class="content">
-                  <p class="heading">Lorem.</p>
-                  <p class="para">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Modi laboriosam at voluptas minus culpa deserunt delectus
-                    sapiente inventore pariatur
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-sm-12 col-md-4 col-12 col-lg-4"
-              data-aos="fade-left"
-              data-aos-delay="1000"
-            >
-              <div class="card-custom mx-auto">
-                <div class="content">
-                  <p class="heading">Lorem.</p>
-                  <p class="para">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Modi laboriosam at voluptas minus culpa deserunt delectus
-                    sapiente inventore pariatur
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- section about-->
     <section class="container-fluid mt-5 about" id="tentang">
-      <div class="container">
-        <div class="about">
-          <div class="about-content row justify-content-center">
-            <div class="col-lg-6 col-md-10 col-12 col-sm-12 about-title">
-              Tentang Sukaregang Leather Craft
+        <div class="container">
+            <div class="about">
+                <div class="about-content row justify-content-center">
+                    <div class="col-lg-6 col-md-10 col-12 col-sm-12 about-title">
+                        Tentang Sukaregang Leather Craft
+                    </div>
+                    <div class="col-lg-6 about-desc">
+                        Sukaregang Leather Craft adalah UMKM lokal Garut yang bergerak di
+                        bidang kerajinan kulit asli. Kami memproduksi berbagai produk
+                        eksklusif seperti tas, dompet, sepatu, dan aksesoris berbahan
+                        kulit asli Sukaregang. Semua produk kami dikerjakan secara manual
+                        oleh pengrajin berpengalaman, dengan bahan berkualitas dan harga
+                        terjangkau.
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 about-desc">
-              Sukaregang Leather Craft adalah UMKM lokal Garut yang bergerak di
-              bidang kerajinan kulit asli. Kami memproduksi berbagai produk
-              eksklusif seperti tas, dompet, sepatu, dan aksesoris berbahan
-              kulit asli Sukaregang. Semua produk kami dikerjakan secara manual
-              oleh pengrajin berpengalaman, dengan bahan berkualitas dan harga
-              terjangkau.
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="container-fluid mt-2">
-      <div class="row justify-content-center">
-        <div class="col-11 mt-5">
-          <div class="tentang position-relative">
-            <div
-              class="tentang-item-a tentang-item bg-image"
-              style="background-image: url(asset/img/about.png)"
-            >
-              <div class="tentang-content display-table">
-                <div class="table-cell">
-                  <div class="container border-white">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="tentang-body">
-                          <h1 class="tentang-title">
-                            Sukaregang Leather Craft
-                          </h1>
-                          <p class="tentang-desc">
-                            Berawal dari kecintaan terhadap kerajinan kulit khas
-                            Garut, Sukaregang Leather Craft hadir untuk
-                            menghadirkan produk kulit premium yang elegan dan
-                            tahan lama. Kami percaya, setiap produk memiliki
-                            cerita dan nilai seni tersendiri. Mulai dari
-                            pemilihan bahan terbaik hingga proses produksi
-                            manual, kami berkomitmen memberikan kualitas terbaik
-                            untuk Anda.
-                          </p>
+        <div class="row justify-content-center">
+            <div class="col-11 mt-5">
+                <div class="tentang position-relative">
+                    <div class="tentang-item-a tentang-item bg-image"
+                        style="background-image: url(asset/img/about.png)">
+                        <div class="tentang-content display-table">
+                            <div class="table-cell">
+                                <div class="container border-white">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="tentang-body">
+                                                <h1 class="tentang-title">
+                                                    Sukaregang Leather Craft
+                                                </h1>
+                                                <p class="tentang-desc">
+                                                    Berawal dari kecintaan terhadap kerajinan kulit khas
+                                                    Garut, Sukaregang Leather Craft hadir untuk
+                                                    menghadirkan produk kulit premium yang elegan dan
+                                                    tahan lama. Kami percaya, setiap produk memiliki
+                                                    cerita dan nilai seni tersendiri. Mulai dari
+                                                    pemilihan bahan terbaik hingga proses produksi
+                                                    manual, kami berkomitmen memberikan kualitas terbaik
+                                                    untuk Anda.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- section -->
 
     <section id="" class="container-fluid tutorial mb-5">
-      <div class="container tutorial-title" data-aos="fade-up">
-        <h2>Kenapa Harus Kami?</h2>
-        <p class="text-center">Tas Kulit Asli, Rasa Garut, Kualitas Dunia</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="steps-5">
-          <div class="tutorial-container">
-            <div class="tutorial-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="content">
-                <span class="tutorial-number">01</span>
-                <div class="card-body">
-                  <div class="tutorial-icon">
-                    <i class="bi bi-gem"></i>
-                  </div>
-                  <div class="tutorial-content">
-                    <h3>Kulit Asli Garut Berkualitas</h3>
-                    <p>
-                      Kami hanya menggunakan kulit asli pilihan dari Sukaregang,
-                      Garut — daerah yang terkenal sebagai sentra kulit terbaik
-                      di Indonesia. Setiap produk dibuat dari bahan kulit
-                      premium yang kuat, tahan lama, dan memiliki tekstur khas.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tutorial-item" data-aos="fade-up" data-aos-delay="300">
-              <div class="content">
-                <span class="tutorial-number">02</span>
-                <div class="card-body">
-                  <div class="tutorial-icon">
-                    <i class="bi bi-person-badge"></i>
-                  </div>
-                  <div class="tutorial-content">
-                    <h3>Dibuat oleh Pengrajin Berpengalaman</h3>
-                    <p>
-                      Semua produk kami dikerjakan langsung oleh pengrajin lokal
-                      yang sudah puluhan tahun berpengalaman di bidang kerajinan
-                      kulit. Setiap jahitan dan detail diproses manual dengan
-                      ketelitian tinggi, menghasilkan produk yang rapi dan
-                      eksklusif.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="tutorial-item" data-aos="fade-up" data-aos-delay="400">
-              <div class="content">
-                <span class="tutorial-number">03</span>
-                <div class="card-body">
-                  <div class="tutorial-icon">
-                    <i class="bi bi-stars"></i>
-                  </div>
-                  <div class="tutorial-content">
-                    <h3>Desain Elegan &amp; Eksklusif</h3>
-                    <p>
-                      Kami menghadirkan desain tas, dompet, dan sepatu kulit
-                      yang elegan, modern, dan tetap mempertahankan sentuhan
-                      etnik khas Garut. Produk kami cocok digunakan untuk
-                      aktivitas sehari-hari, kerja, maupun hadiah spesial.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="process tutorial-item"
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              <div class="content">
-                <span class="tutorial-number">04</span>
-                <div class="card-body">
-                  <div class="tutorial-icon">
-                    <i class="bi bi-cash"></i>
-                  </div>
-                  <div class="tutorial-content">
-                    <h3>Harga Terjangkau &amp; Bisa Custom</h3>
-                    <p>
-                      Kami menawarkan harga langsung dari pengrajin tanpa
-                      perantara, sehingga lebih terjangkau. Selain itu,
-                      pelanggan bisa request custom nama, warna, hingga model
-                      sesuai keinginan, menjadikan produk lebih personal dan
-                      eksklusif.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="container tutorial-title" data-aos="fade-up">
+            <h2>Cara Pemesanan</h2>
         </div>
-      </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="steps-5">
+                <div class="tutorial-container">
+                    <div class="tutorial-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                            <span class="tutorial-number">01</span>
+                            <div class="card-body">
+                                <div class="tutorial-icon">
+                                  <i class="bi bi-box2-heart-fill"></i>
+                                </div>
+                                <div class="tutorial-content">
+                                    <h3>Pilih Produk Favoritmu atau Buat Desain Sendiri</h3>
+                                    <p>
+                                        Cek koleksi produk kulit asli kami atau kirim desain
+                                        custom sesuai selera kamu. Bebas, tinggal pilih yang
+                                        paling kamu suka!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="content">
+                            <span class="tutorial-number">02</span>
+                            <div class="card-body">
+                                <div class="tutorial-icon">
+                                  <i class="bi bi-hourglass-split"></i>
+                                </div>
+                                <div class="tutorial-content">
+                                    <h3>Pesanan Diproses oleh Pengrajin Ahli</h3>
+                                    <p>
+                                        Setelah konfirmasi, tim pengrajin Sukaregang siap buatkan
+                                        pesanan kamu dengan bahan kulit berkualitas dan detail
+                                        terbaik.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tutorial-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="content">
+                            <span class="tutorial-number">03</span>
+                            <div class="card-body">
+                                <div class="tutorial-icon">
+                                  <i class="bi bi-truck"></i>
+                                </div>
+                                <div class="tutorial-content">
+                                    <h3>Siap Dikirim Sampai Rumahmu</h3>
+                                    <p>
+                                        Produk selesai? Langsung kami kirim ke alamat kamu.
+                                        Dijamin aman, cepat, dan sampai dalam kondisi terbaik!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="process tutorial-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="content">
+                            <span class="tutorial-number">04</span>
+                            <div class="card-body">
+                                <div class="tutorial-icon">
+                                  <i class="bi bi-emoji-heart-eyes-fill"></i>
+                                </div>
+                                <div class="tutorial-content">
+                                    <h3>Nikmati Produk Kulit Aslimu
+                                        <p>
+                                            Setelah sampai, saatnya pakai produk pilihanmu dan rasakan kualitas kulit
+                                            asli Sukaregang yang awet dan elegan
+                                    </h3>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- koleksi -->
     <section class="container-fluid koleksi mt-5" id="koleksi">
-      <div class="koleksi-content row">
-        <div class="col-12 col-lg-12 col-md-12">
-          <div class="col-lg-12">
-            <p class="koleksi-title-head mx-auto col-lg-8">
-              Koleksi Sukaregang Leather Craft
-            </p>
-          </div>
-
-          <div class="col-lg-11 col-md-11 col-sm-11 col-11 mx-auto mt-5">
-            <div class="row">
-              <!-- Kolom kiri gambar besar -->
-              <div class="col-lg-6 mb-3 col-md-12">
-                <div class="koleksi position-relative koleksi-kiri">
-                  <div
-                    class="koleksi-item-a bg-image"
-                    style="background-image: url(asset/img/koleksi-1.png)"
-                  >
-                    <div class="koleksi display-table">
-                      <div class="table-cell">
-                        <div class="container">
-                          <div class="row">
-                            <div class="col-lg-12 col-12 col-md-12">
-                              <div class="koleksi-body">
-                                <div class="blur-cover-kiri">
-                                  <h1 class="koleksi-title">
-                                    Sepatu Kulit Khas Garut
-                                  </h1>
-                                  <p class="koleksi-desc">
-                                    Sepatu kulit khas Garut dibuat dari kulit
-                                    asli pilihan dengan kualitas terbaik.
-                                    Dikerjakan langsung oleh pengrajin lokal
-                                    berpengalaman, setiap sepatu diproses secara
-                                    manual dengan desain elegan, nyaman dipakai,
-                                    dan tahan lama.
-                                  </p>
-                                  <div class="col-lg-12">
-                                    <span class="float-end arrow-fill"
-                                      ><i class="bi bi-caret-right-fill"></i
-                                    ></span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Kolom kanan, 2 card bertumpuk -->
-              <div class="col-lg-6 col-md-12 d-flex flex-column">
-                <div class="koleksi position-relative koleksi-kanan">
-                  <div
-                    class="koleksi-item-a bg-image"
-                    style="background-image: url(asset/img/koleksi-2.png)"
-                  >
-                    <div class="koleksi display-table">
-                      <div class="table-cell">
-                        <div class="container border-white">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="koleksi-body">
-                                <div class="blur-cover-kanan">
-                                  <h1 class="koleksi-title">
-                                    Tas Kulit Khas Garut
-                                  </h1>
-                                  <p class="koleksi-desc">
-                                    Tas kulit khas Garut terkenal dengan
-                                    kualitas bahan kulit asli Sukaregang yang
-                                    kuat, tahan lama, dan memiliki tekstur khas.
-                                    Dibuat langsung oleh pengrajin lokal
-                                    berpengalaman, setiap tas diproses secara
-                                    manual dengan desain elegan yang cocok untuk
-                                    berbagai kebutuhan.
-                                  </p>
-                                  <div class="col-lg-12">
-                                    <span class="float-end arrow-fill"
-                                      ><i class="bi bi-caret-right-fill"></i
-                                    ></span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+        <div class="koleksi-content row">
+            <div class="col-12 col-lg-12 col-md-12">
+                <div class="col-lg-12">
+                    <p class="koleksi-title-head mx-auto col-lg-8">
+                        Koleksi Sukaregang Leather Craft
+                    </p>
                 </div>
 
-                <div class="koleksi position-relative koleksi-kanan">
-                  <div
-                    class="koleksi-item-a bg-image"
-                    style="background-image: url(asset/img/koleksi-3.png)"
-                  >
-                    <div class="koleksi display-table">
-                      <div class="table-cell">
-                        <div class="container border-white">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="koleksi-body">
-                                <div class="blur-cover-kanan">
-                                  <h1 class="koleksi-title">
-                                    Gantungan Kunci Khas Garut
-                                  </h1>
-                                  <p class="koleksi-desc">
-                                    Gantungan kunci khas Garut terbuat dari
-                                    kulit asli Sukaregang dengan desain unik dan
-                                    menarik. Cocok dijadikan souvenir, hadiah,
-                                    atau pelengkap gaya Anda sehari-hari.
-                                  </p>
-                                  <div class="col-lg-12">
-                                    <span class="float-end arrow-fill"
-                                      ><i class="bi bi-caret-right-fill"></i
-                                    ></span>
-                                  </div>
+                <div class="col-lg-11 col-md-11 col-sm-11 col-11 mx-auto mt-5">
+                    <div class="row">
+                        <!-- Kolom kiri gambar besar -->
+                        <div class="col-lg-6 mb-3 col-md-12">
+                            <div class="koleksi position-relative koleksi-kiri">
+                                <div class="koleksi-item-a bg-image"
+                                    style="background-image: url(asset/img/koleksi-1.png)">
+                                    <div class="koleksi display-table">
+                                        <div class="table-cell">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-12 col-md-12">
+                                                        <div class="koleksi-body">
+                                                            <div class="blur-cover-kiri">
+                                                                <h1 class="koleksi-title">
+                                                                    Sepatu Kulit Khas Garut
+                                                                </h1>
+                                                                <p class="koleksi-desc">
+                                                                    Sepatu kulit khas Garut dibuat dari kulit
+                                                                    asli pilihan dengan kualitas terbaik.
+                                                                    Dikerjakan langsung oleh pengrajin lokal
+                                                                    berpengalaman, setiap sepatu diproses secara
+                                                                    manual dengan desain elegan, nyaman dipakai,
+                                                                    dan tahan lama.
+                                                                </p>
+                                                                <div class="col-lg-12">
+                                                                    <span class="float-end arrow-fill"><i
+                                                                            class="bi bi-caret-right-fill"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
+
+                        <!-- Kolom kanan, 2 card bertumpuk -->
+                        <div class="col-lg-6 col-md-12 d-flex flex-column">
+                            <div class="koleksi position-relative koleksi-kanan">
+                                <div class="koleksi-item-a bg-image"
+                                    style="background-image: url(asset/img/koleksi-2.png)">
+                                    <div class="koleksi display-table">
+                                        <div class="table-cell">
+                                            <div class="container border-white">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="koleksi-body">
+                                                            <div class="blur-cover-kanan">
+                                                                <h1 class="koleksi-title">
+                                                                    Tas Kulit Khas Garut
+                                                                </h1>
+                                                                <p class="koleksi-desc">
+                                                                    Tas kulit khas Garut terkenal dengan
+                                                                    kualitas bahan kulit asli Sukaregang yang
+                                                                    kuat, tahan lama, dan memiliki tekstur khas.
+                                                                    Dibuat langsung oleh pengrajin lokal
+                                                                    berpengalaman, setiap tas diproses secara
+                                                                    manual dengan desain elegan yang cocok untuk
+                                                                    berbagai kebutuhan.
+                                                                </p>
+                                                                <div class="col-lg-12">
+                                                                    <span class="float-end arrow-fill"><i
+                                                                            class="bi bi-caret-right-fill"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="koleksi position-relative koleksi-kanan">
+                                <div class="koleksi-item-a bg-image"
+                                    style="background-image: url(asset/img/koleksi-3.png)">
+                                    <div class="koleksi display-table">
+                                        <div class="table-cell">
+                                            <div class="container border-white">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="koleksi-body">
+                                                            <div class="blur-cover-kanan">
+                                                                <h1 class="koleksi-title">
+                                                                    Gantungan Kunci Khas Garut
+                                                                </h1>
+                                                                <p class="koleksi-desc">
+                                                                    Gantungan kunci khas Garut terbuat dari
+                                                                    kulit asli Sukaregang dengan desain unik dan
+                                                                    menarik. Cocok dijadikan souvenir, hadiah,
+                                                                    atau pelengkap gaya Anda sehari-hari.
+                                                                </p>
+                                                                <div class="col-lg-12">
+                                                                    <span class="float-end arrow-fill"><i
+                                                                            class="bi bi-caret-right-fill"></i></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col-lg-11 mx-auto">
+                    <p class="koleksi-foot">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                        assumenda, repellendus possimus laborum officiis minus, quia
+                        consequuntur atque magni exercitationem nisi deserunt natus
+                        doloribus praesentium ipsum optio sed rem aut dolorem vel aliquid
+                        similique quasi suscipit voluptatum? Nulla cum, at mollitia
+                        recusandae eum magnam nostrum quos, perspiciatis ex reprehenderit
+                        natus incidunt quae iusto nobis aspernatur ullam vel amet.
+                        Consequuntur excepturi provident in voluptates saepe nobis alias
+                        possimus vel a nesciunt! Hic consectetur ipsam alias inventore
+                        tempore doloremque voluptas possimus maxime?
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-11 mx-auto">
-            <p class="koleksi-foot">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
-              assumenda, repellendus possimus laborum officiis minus, quia
-              consequuntur atque magni exercitationem nisi deserunt natus
-              doloribus praesentium ipsum optio sed rem aut dolorem vel aliquid
-              similique quasi suscipit voluptatum? Nulla cum, at mollitia
-              recusandae eum magnam nostrum quos, perspiciatis ex reprehenderit
-              natus incidunt quae iusto nobis aspernatur ullam vel amet.
-              Consequuntur excepturi provident in voluptates saepe nobis alias
-              possimus vel a nesciunt! Hic consectetur ipsam alias inventore
-              tempore doloremque voluptas possimus maxime?
-            </p>
-          </div>
         </div>
-      </div>
     </section>
 
     <!-- START TESTIMONY -->
-    <hr
-      class="mx-auto"
-      style="
+    <hr class="mx-auto"
+        style="
         width: 90%;
         height: 4px;
         margin-top: 7rem;
         background-color: black;
         border: none;
-      "
-    />
+      " />
 
     <section class="testimony-section mt-5" id="testimoni">
-      <div class="testimony-wrapper">
-        <!--judul dan button-->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <h2 class="m-0 testimoni-title">Testimoni</h2>
-          <button
-            class="btn btn-dark rounded-pill fw-bold justify-content-center d-flex"
-            data-bs-toggle="modal"
-            data-bs-target="#modalTestimony"
-          >
-            Lihat Selengkapnya
-          </button>
+        <div class="testimony-wrapper">
+            <!--judul dan button-->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="m-0 testimoni-title">Testimoni</h2>
+                <button class="btn-selengkapnya rounded-pill" data-bs-toggle="modal"
+                    data-bs-target="#modalTestimony">
+                    Selengkapnya
+                </button>
+            </div>
+
+            <!--Start Card-->
+            <div class="row g-4 mt-3">
+                <!-- Kartu 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card-testimoni">
+                        <img src="asset/img/testimoni_img/testimoni.jpg" alt="Testimoni Nauval"
+                            style="object-fit: cover; height: 500px" class="w-100" />
+                        <div class="overlay"></div>
+                        <div class="details position-absolute bottom-0 w-100 p-3 text-white">
+                            <h5 class="cardHeader mb-0 me-2">Nauval</h5>
+                            <div>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae, consequuntur impedit doloremque ducimus deserunt
+                                tenetur deleniti nesciunt. Nobis, commodi sapiente. Officia
+                                vitae ipsum tenetur consectetur, explicabo delectus aut quidem
+                                nam?</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card-testimoni">
+                        <img src="asset/img/testimoni_img/testimoni.jpg" alt="Testimoni Nauval"
+                            style="object-fit: cover; height: 500px" class="w-100" />
+                        <div class="overlay"></div>
+                        <div class="details position-absolute bottom-0 w-100 p-3 text-white">
+                            <h5 class="cardHeader mb-0 me-2">Shaktya</h5>
+                            <div>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Iusto placeat, quibusdam, perspiciatis eligendi id tempore
+                                quos dolorem, nulla asperiores accusamus officiis! Quod dicta,
+                                magni voluptas itaque perferendis cum cumque
+                                necessitatibus.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kartu 3 -->
+                <div class="col-md-4">
+                    <div class="card-testimoni">
+                        <img src="asset/img/testimoni_img/testimoni.jpg" alt="Testimoni Nauval"
+                            style="object-fit: cover; height: 500px" class="w-100" />
+                        <div class="overlay"></div>
+                        <div class="details position-absolute bottom-0 w-100 p-3 text-white">
+                            <h5 class="cardHeader mb-0 me-2">Agus</h5>
+                            <div>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+
+                            <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Iusto placeat, quibusdam, perspiciatis eligendi id tempore
+                                quos dolorem, nulla asperiores accusamus officiis! Quod dicta,
+                                magni voluptas itaque perferendis cum cumque
+                                necessitatibus.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paragraf di bawah -->
+                <p class="mt-3 paragraf-testimony">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged.
+                </p>
+            </div>
+            <!--End Card-->
         </div>
-
-        <!--Start Card-->
-        <div class="row g-4">
-          <!-- Kartu 1 -->
-          <div class="col-md-4">
-            <div class="card-testimoni">
-              <img
-                src="asset/img/testimoni_img/testimoni.jpg"
-                alt="Testimoni Nauval"
-                style="object-fit: cover; height: 500px"
-                class="w-100"
-              />
-              <div class="overlay"></div>
-              <div
-                class="details position-absolute bottom-0 w-100 p-3 text-white"
-              >
-                <h5 class="cardHeader">Nauval</h5>
-                <small
-                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae, consequuntur impedit doloremque ducimus deserunt
-                  tenetur deleniti nesciunt. Nobis, commodi sapiente. Officia
-                  vitae ipsum tenetur consectetur, explicabo delectus aut quidem
-                  nam?</small
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Kartu 2 -->
-          <div class="col-md-4">
-            <div class="card-testimoni">
-              <img
-                src="asset/img/testimoni_img/testimoni.jpg"
-                alt="Testimoni Nauval"
-                style="object-fit: cover; height: 500px"
-                class="w-100"
-              />
-              <div class="overlay"></div>
-              <div
-                class="details position-absolute bottom-0 w-100 p-3 text-white"
-              >
-                <h5 class="cardHeader">Nauval</h5>
-                <small
-                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto placeat, quibusdam, perspiciatis eligendi id tempore
-                  quos dolorem, nulla asperiores accusamus officiis! Quod dicta,
-                  magni voluptas itaque perferendis cum cumque
-                  necessitatibus.</small
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Kartu 3 -->
-          <div class="col-md-4">
-            <div class="card-testimoni">
-              <img
-                src="asset/img/testimoni_img/testimoni.jpg"
-                alt="Testimoni Nauval"
-                style="object-fit: cover; height: 500px"
-                class="w-100"
-              />
-              <div class="overlay"></div>
-              <div
-                class="details position-absolute bottom-0 w-100 p-3 text-white"
-              >
-                <h5 class="cardHeader">Nauval</h5>
-                <small
-                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Iusto placeat, quibusdam, perspiciatis eligendi id tempore
-                  quos dolorem, nulla asperiores accusamus officiis! Quod dicta,
-                  magni voluptas itaque perferendis cum cumque
-                  necessitatibus.</small
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Paragraf di bawah -->
-          <p class="mt-3 paragraf-testimony">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-        </div>
-        <!--End Card-->
-      </div>
     </section>
 
-    <hr
-      class="mx-auto"
-      style="
+    <hr class="mx-auto"
+        style="
         width: 90%;
         margin-top: 5rem;
         height: 4px;
         background-color: black;
         border: none;
-      "
-    />
+      " />
     <!--END TESTIMONY-->
-
 
     <!--START VIDEO-->
     <section>
-      <div class="d-flex justify-content-center mt-5">
-        <div class="col-lg-11 col-11 col-sm-11 col-md-11">
-          <video controls class="rounded-4 video-responsive">
-            <source src="video/nama_video.mp4" type="video/mp4" />
-            Browser Anda tidak mendukung pemutaran video.
-          </video>
+        <div class="d-flex justify-content-center mt-5">
+            <div class="col-lg-11 col-11 col-sm-11 col-md-11">
+                <video controls class="rounded-4 video-responsive">
+                    <source src="video/nama_video.mp4" type="video/mp4" />
+                    Browser Anda tidak mendukung pemutaran video.
+                </video>
+            </div>
         </div>
-      </div>
     </section>
     <!--END VIDEO-->
 
     <section class="container-fluid">
-      <div class="kontak">
-        <div class="container"></div>
-      </div>
+        <div class="kontak">
+            <div class="container"></div>
+        </div>
     </section>
 
     <!--Content Modal-->
-    <div
-      class="modal fade"
-      id="modalTestimony"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <!--Header Modal-->
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
-              Testimoni
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <!--Body Modal-->
-          <div class="modal-body">
-            <div class="swiper intro-carousel">
-              <div class="swiper-wrapper">
-                <!--content 1-->
-                <div
-                  class="swiper-slide slide-modal overflow-hidden bg-body-tertiary"
-                >
-                  <img
-                    src="asset/img/testimoni_img/testimoni.jpg"
-                    alt="deskripsi Nauval"
-                    width="400px"
-                    height="300px"
-                    class="rounded-4 shadow bg-body-tertiary"
-                    style="object-fit: cover"
-                  />
-                  <div class="paragraf-content-modal">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Culpa suscipit fuga quas ullam non nesciunt, voluptas illo
-                      delectus hic, eos aliquid et tempore vel quasi? Quam
-                      excepturi blanditiis minima quo?
-                    </p>
-                  </div>
+    <div class="modal fade" id="modalTestimony" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <!--Header Modal-->
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
+                        Testimoni
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <!--content 2-->
-                <div
-                  class="swiper-slide slide-modal overflow-hidden bg-body-tertiary"
-                >
-                  <img
-                    src="asset/img/testimoni_img/testimoni.jpg"
-                    alt="deskripsi Nauval"
-                    width="400px"
-                    height="300px"
-                    class="rounded-4 shadow bg-body-tertiary"
-                    style="object-fit: cover"
-                  />
-                  <div class="paragraf-content-modal">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Culpa suscipit fuga quas ullam non nesciunt, voluptas illo
-                      delectus hic, eos aliquid et tempore vel quasi? Quam
-                      excepturi blanditiis minima quo?
-                    </p>
-                  </div>
-                </div>
+                <!--Body Modal-->
+                <div class="modal-body">
+                    <div class="swiper intro-carousel">
+                        <div class="swiper-wrapper">
+                            <!--content 1-->
+                            <div class="swiper-slide slide-modal overflow-hidden bg-body-tertiary">
+                                <img src="asset/img/testimoni_img/testimoni.jpg" alt="deskripsi Nauval"
+                                    class="rounded-4 shadow bg-body-tertiary"
+                                    style="
+                      object-fit: cover;
+                      max-width: 400px;
+                      max-height: 250px;
+                    " />
+                                <div class="paragraf-content-modal">
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Culpa suscipit fuga quas ullam non nesciunt, voluptas illo
+                                        delectus hic, eos aliquid et tempore vel quasi? Quam
+                                        excepturi blanditiis minima quo?
+                                    </p>
+                                </div>
+                            </div>
 
-                <!--Content 3-->
-                <div
-                  class="swiper-slide slide-modal overflow-hidden rounded bg-body-tertiary"
-                >
-                  <img
-                    src="asset/img/testimoni_img/testimoni.jpg"
-                    alt="deskripsi Nauval"
-                    width="400px"
-                    height="300px"
-                    class="rounded-4 shadow bg-body-tertiary"
-                    style="object-fit: cover"
-                  />
-                  <div class="paragraf-content-modal">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Culpa suscipit fuga quas ullam non nesciunt, voluptas illo
-                      delectus hic, eos aliquid et tempore vel quasi? Quam
-                      excepturi blanditiis minima quo?
-                    </p>
-                  </div>
+                            <!--content 2-->
+                            <div class="swiper-slide slide-modal overflow-hidden bg-body-tertiary">
+                                <img src="asset/img/testimoni_img/testimoni.jpg" alt="deskripsi Nauval"
+                                    class="rounded-4 shadow bg-body-tertiary"
+                                    style="
+                      object-fit: cover;
+                      max-width: 400px;
+                      max-height: 250px;
+                    " />
+                                <div class="paragraf-content-modal">
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Culpa suscipit fuga quas ullam non nesciunt, voluptas illo
+                                        delectus hic, eos aliquid et tempore vel quasi? Quam
+                                        excepturi blanditiis minima quo?
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Content 3-->
+                            <div class="swiper-slide slide-modal overflow-hidden rounded bg-body-tertiary">
+                                <img src="asset/img/testimoni_img/testimoni.jpg" alt="deskripsi Nauval"
+                                    class="rounded-4 shadow bg-body-tertiary"
+                                    style="
+                      object-fit: cover;
+                      max-width: 400px;
+                      max-height: 250px;
+                    " />
+                                <div class="paragraf-content-modal">
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Culpa suscipit fuga quas ullam non nesciunt, voluptas illo
+                                        delectus hic, eos aliquid et tempore vel quasi? Quam
+                                        excepturi blanditiis minima quo?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">sss</div>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-pagination">sss</div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <!--End Content Modal-->
 
     <footer class="text-center text-lg-start text-white mt-5">
-      <div class="container p-4 pb-0">
-        <hr class="mb-4" style="color: black" />
+        <div class="container p-4 pb-0">
+            <hr class="mb-4" style="color: black" />
 
-        <div class="container-fluid">
-          <div class="row">
-            <p class="h1 text-center text-uppercase text-dark fw-bold">
-              Sukaregang Craft Leather
-            </p>
-          </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <p class="h1 text-center text-uppercase text-dark fw-bold">
+                        Sukaregang Craft Leather
+                    </p>
+                </div>
+            </div>
+
+            <hr class="mb-4" style="color: black" />
+
+            <section class="mb-4 text-center">
+                <a class="m-1" href=""><img src="asset/img/itsdaylogo.png" alt=""
+                        class="footer-logo" /></a>
+                <a class="m-1" href=""><img src="asset/img/logo-diskuk.png" alt=""
+                        class="footer-logo" /></a>
+                <a class="m-1" href=""><img src="asset/img/masoem.png" alt=""
+                        class="footer-logo" /></a>
+            </section>
         </div>
 
-        <hr class="mb-4" style="color: black" />
-
-        <section class="mb-4 text-center">
-          <a class="m-1" href=""
-            ><img src="asset/img/itsdaylogo.png" alt="" class="footer-logo"
-          /></a>
-          <a class="m-1" href=""
-            ><img src="asset/img/logo-diskuk.png" alt="" class="footer-logo"
-          /></a>
-          <a class="m-1" href=""
-            ><img src="asset/img/masoem.png" alt="" class="footer-logo"
-          /></a>
-        </section>
-      </div>
-
-      <div class="text-center text-dark p-3 bg-dark bg-opacity-10">
-        © 2025 Copyright:
-        <a class="text-dark">Sukaregang Craft Leather</a>
-      </div>
+        <div class="text-center text-dark p-3 bg-dark bg-opacity-10">
+            © 2025 Copyright:
+            <a class="text-dark">Sukaregang Craft Leather</a>
+        </div>
     </footer>
 
     <script src="asset/aos/aos.js"></script>
@@ -950,12 +841,13 @@
     <script src="asset/js/three.min.js"></script>
     <script src="asset/js/vanta.fog.min.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <script>
-      if ("scrollRestoration" in history) {
-        history.scrollRestoration = "manual";
-      }
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
     </script>
-  </body>
+</body>
+
 </html>
