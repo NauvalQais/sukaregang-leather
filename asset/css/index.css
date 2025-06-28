@@ -23,7 +23,7 @@ body {
   color: #000000;
   
 }
-/* .custom-toggler .navbar-toggler-icon {
+.custom-toggler .navbar-toggler-icon {
   width: 24px;
   height: 2px;
   background-color: #333;
@@ -70,7 +70,7 @@ body {
 .custom-toggler.collapsed .navbar-toggler-icon::after {
   transform: rotate(-45deg);
   top: 0;
-} */
+}
 
 .custom-link {
   font-size: 18px;
