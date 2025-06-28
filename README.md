@@ -13,6 +13,7 @@ Website ini dirancang untuk memudahkan konsumen melihat langsung karya-karya asl
 
 📌 Teknologi yang Digunakan
 •	HTML5
+
 •	CSS3
 •	JavaScript (Vanilla)
 •	Bootstrap 5
