@@ -20,7 +20,6 @@ body {
 .navbar-custom.solid {
   background-color: #ffffff;
   color: #000000;
-  
 }
 
 .custom-link {
@@ -60,8 +59,6 @@ body {
   transition-property: width, left;
 }
 
-
-
 /* mobile navbar */
 
 .navbar {
@@ -71,7 +68,7 @@ body {
   background-color: transparent !important;
   box-shadow: none;
 }
-.text-nav{
+.text-nav {
   font-weight: bolder;
   color: #000000;
   text-transform: uppercase;
@@ -111,7 +108,6 @@ body {
 .nav-link:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-
 
 .btn-koleksi {
   outline: none;
@@ -165,20 +161,19 @@ body {
   transform: translate3d(100%, 0, 0);
 }
 
-
 .btn-daftar {
   display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
   letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    border-radius: 500px;
-    padding: 0.90rem 1.8rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  padding: 0.9rem 1.8rem;
   text-align: center;
   letter-spacing: 1px;
-  text-decoration: none ;
+  text-decoration: none;
   color: #ffffff;
   background: transparent;
   cursor: pointer;
@@ -195,7 +190,6 @@ body {
 .btn-daftar:active {
   transform: scale(0.9);
 }
-
 
 .btn-login {
   letter-spacing: 2px;
@@ -221,7 +215,7 @@ body {
   right: 50%;
   bottom: 0;
   opacity: 0;
-  content: '';
+  content: "";
   border-radius: 500px;
   background-color: #da8d00;
   z-index: -1;
@@ -244,7 +238,6 @@ body {
   transform: scale(0.9);
 }
 @media (max-width: 575.98px) {
-
   .btn-koleksi {
     padding: 0.5rem 1rem;
     font-size: 10px;
@@ -269,10 +262,12 @@ body {
 .overlay-a {
   text-decoration: none;
   background: linear-gradient(
-    linear-gradient(to bottom,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.25) 30%,
-        rgba(0, 0, 0, 0.3) 100%)
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.25) 30%,
+      rgba(0, 0, 0, 0.3) 100%
+    )
   );
 }
 
@@ -394,7 +389,6 @@ body {
     font-size: 2.7rem;
     text-align: center;
   }
-  
 }
 
 @media (min-width: 768px) {
@@ -402,7 +396,6 @@ body {
     font-size: 1rem;
     text-align: center;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -414,11 +407,11 @@ body {
     font-size: 1rem;
     text-align: left;
     white-space: normal;
-      word-break: normal;
+    word-break: normal;
   }
 }
 /* Kelebihan */
-.kelebihan .kelebihan-title h3{
+.kelebihan .kelebihan-title h3 {
   font-size: 2.8rem;
   text-align: center;
   font-weight: 700;
@@ -438,9 +431,8 @@ body {
   padding: 32px;
   overflow: hidden;
   border-radius: 10px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
 
 .card-custom .content {
   display: flex;
@@ -448,13 +440,13 @@ body {
   align-items: flex-start;
   gap: 20px;
   color: #000000;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card-custom .content .heading {
   font-weight: 700;
   font-size: 32px;
-} 
+}
 
 .card-custom .content .para {
   line-height: 1.5;
@@ -469,7 +461,7 @@ body {
   height: 100%;
   background: linear-gradient(-45deg, #f89b29 0%, #be7c00 100%);
   z-index: -1;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card-custom:hover::before {
@@ -480,12 +472,6 @@ body {
   box-shadow: none;
 }
 
-
-
-
-
-
-
 /* Tentang */
 .about .about-content .about-title {
   font-weight: 700;
@@ -493,7 +479,6 @@ body {
   text-align: center;
 }
 .about .about-content .about-desc {
-
   font-size: 1rem;
   text-align: center;
 }
@@ -543,10 +528,10 @@ body {
 }
 
 .tentang .tentang-desc {
-font-size: 0.9rem;
-color: #ffffff;
-letter-spacing: 0.05em;
-text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .tentang .tentang-title {
@@ -557,18 +542,19 @@ text-align: center;
 }
 
 @media (min-width: 576px) {
-.tentang .tentang-title {
-font-size: 2.9rem;
-text-align: center;
-}
-.tentang .tentang-desc {
-color: #ffffff;
-text-align: center; }
-.about .about-content .about-title {
-font-weight: 700;
-font-size: 3.3rem;
-text-align: center; }
-
+  .tentang .tentang-title {
+    font-size: 2.9rem;
+    text-align: center;
+  }
+  .tentang .tentang-desc {
+    color: #ffffff;
+    text-align: center;
+  }
+  .about .about-content .about-title {
+    font-weight: 700;
+    font-size: 3.3rem;
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -585,10 +571,10 @@ text-align: center; }
     font-size: 2.9rem;
     text-align: left;
   }
-    .about .about-content .about-desc {
-  
-      font-size: 1.1rem;
-      text-align: left; }
+  .about .about-content .about-desc {
+    font-size: 1.1rem;
+    text-align: left;
+  }
 }
 
 .tutorial .tutorial-container {
@@ -608,16 +594,19 @@ text-align: center; }
 .tutorial .tutorial-item:last-child {
   padding-bottom: 0;
 }
-.tutorial .tutorial-title h2{
+.tutorial .tutorial-title h2 {
   font-weight: 700;
-    font-size: 3.5rem;
-    text-align: center;
+  font-size: 3.5rem;
+  text-align: center;
 }
 .tutorial .tutorial-item .content {
   width: 100%;
   position: relative;
-  background: linear-gradient(145deg, color-mix(in srgb, #be7c00, transparent 75%));
-    border: 2px solid color-mix(in srgb, #da8d00, transparent 55%);
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, #be7c00, transparent 75%)
+  );
+  border: 2px solid color-mix(in srgb, #da8d00, transparent 55%);
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -628,8 +617,12 @@ text-align: center; }
 }
 
 .tutorial .tutorial-item .content:hover .tutorial-icon {
-  background: linear-gradient(135deg, color-mix(in srgb, #da8d00, transparent 100%), #da8d00);
-    transform: rotate(10deg);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #da8d00, transparent 100%),
+    #da8d00
+  );
+  transform: rotate(10deg);
 }
 
 .tutorial .tutorial-item .content:hover .tutorial-number {
@@ -666,14 +659,14 @@ text-align: center; }
   display: grid;
   place-items: center;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 5px 15px
+    color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .tutorial .tutorial-item .tutorial-icon i {
   font-size: 2rem;
   color: #ffffff;
 }
-
 
 .tutorial .tutorial-item .tutorial-content p {
   color: black;
@@ -688,7 +681,6 @@ text-align: center; }
   font-weight: 700;
   margin: 0;
 }
-
 
 @media (max-width: 767.98px) {
   .tutorial .tutorial-container {
@@ -736,14 +728,12 @@ text-align: center; }
     font-size: 1.75rem;
   }
 
-    .tutorial .tutorial-title h2 {
-      font-weight: 700;
-      font-size: 1.8rem;
-      text-align: center; }
-
-  
+  .tutorial .tutorial-title h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+  }
 }
-
 
 .koleksi .koleksi-content .koleksi-title-head {
   font-weight: 700;
@@ -878,10 +868,10 @@ text-align: center; }
     text-align: left;
     color: #ffffff;
   }
-    .koleksi .koleksi-content .koleksi-desc {
-      font-size: 0.9rem;
-      text-align: left;
-    }
+  .koleksi .koleksi-content .koleksi-desc {
+    font-size: 0.9rem;
+    text-align: left;
+  }
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -941,10 +931,10 @@ text-align: center; }
     text-align: center;
     color: #ffffff;
   }
-    .koleksi .koleksi-content .koleksi-desc {
-      font-size: 0.9;
-      text-align: center;
-    }
+  .koleksi .koleksi-content .koleksi-desc {
+    font-size: 0.9;
+    text-align: center;
+  }
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -993,10 +983,10 @@ text-align: center; }
     text-align: center;
     color: #ffffff;
   }
-    .koleksi .koleksi-content .koleksi-desc {
-      font-size: 0.9rem;
-      text-align: center;
-    }
+  .koleksi .koleksi-content .koleksi-desc {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 10px;
@@ -1046,64 +1036,12 @@ text-align: center; }
     text-align: center;
   }
 
-    .koleksi .koleksi-content .koleksi-desc {
-      font-size: 0.8rem;
-      text-align: center;
-    }
+  .koleksi .koleksi-content .koleksi-desc {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 
   .koleksi .koleksi-kanan:not(:last-child) {
     margin-bottom: 10px;
   }
-
-
-    
 }
-
-
-/*styling Testimony*/
-.testimony-section {
-  padding: 3rem;
-}
-
-.testimony-wrapper {
-  padding: 2rem;
-}
-.paragraf-testimony {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  text-align: center;
-}
-
-.slide-modal {
-  display: flex;
-  justify-content: center;
-}
-.paragraf-content-modal {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-@media (max-width: 576px) {
-  .testimony-section {
-    padding: 0; /* atau 0 kalau kamu mau hilangin total */
-  }
-  .testimoni-wrapper {
-    padding: 1rem;
-  }
-  .paragraf-testimony {
-    text-align: start;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  /*slide modal*/
-  .slide-modal {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .paragraf-content-modal {
-    padding: 2rem;
-    font-size: 1rem;
-    text-align: center;
-  }
-}
-
