@@ -1,7 +1,7 @@
 // Carousel
 
 new Swiper('.intro-carousel', {
-    speed: 1200,
+    speed: 1500,
     loop: true,
     autoplay: {
       delay: 2000,
@@ -88,23 +88,5 @@ new Swiper('.intro-carousel', {
     loop: true,
   });
 
-
-  document.addEventListener("DOMContentLoaded", function () {
-    VANTA.FOG({
-      el: "#vanta-canvas",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      highlightColor: 0x80cbc4,
-      midtoneColor: 0xb4ebe6,
-      lowlightColor: 0xffffff,
-      baseColor: 0xffffff,
-      blurFactor: 0.77,
-      speed: 1.8,
-      zoom: 0.5,
-    });
-  });
 
 
